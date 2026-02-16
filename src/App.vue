@@ -27,7 +27,7 @@ export default {
   data() {
     return {
       appTitle: 'Student Info App',
-      appSubtitle: 'Modern Student Management System'
+      appSubtitle: 'Student Management System'
     }
   }
 }

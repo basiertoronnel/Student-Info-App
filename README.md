@@ -89,6 +89,15 @@ npm run build    # Build for production
 npm run preview  # Preview production build
 ```
 
+### GitHub Pages (live site)
+
+The app deploys to the **gh-pages** branch on push to `main`. To make it live:
+
+1. Go to the repo on GitHub → **Settings** → **Pages**.
+2. Under **Build and deployment** → **Source**, choose **Deploy from a branch**.
+3. **Branch**: select **gh-pages**, folder **/ (root)**.
+4. Save. The site will be at: **https://basiertoronnel.github.io/Student-Info-App/**
+
 ## 📦 Dependencies
 
 ```json

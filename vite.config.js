@@ -3,5 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 export default defineConfig({
   plugins: [vue()],
-  base: '/Student-Info-App/'
+  // Relative base so assets load correctly on GitHub Pages and when opening dist locally
+  base: './'
 })

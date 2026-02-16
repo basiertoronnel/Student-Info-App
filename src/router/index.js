@@ -19,8 +19,10 @@ const routes = [
   }
 ]
 
+// In production (GitHub Pages) app is served at /Student-Info-App/; in dev at /
+const base = import.meta.env.PROD ? '/Student-Info-App/' : '/'
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory(base),
   routes
 })
 

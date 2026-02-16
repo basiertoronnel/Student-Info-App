@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../pages/Home.vue'
 import Students from '../pages/Students.vue'
 
@@ -9,20 +9,15 @@ const routes = [
     component: Home
   },
   {
-    path: '',
-    redirect: '/'
-  },
-  {
     path: '/students',
     name: 'Students',
     component: Students
   }
 ]
 
-// In production (GitHub Pages) app is served at /Student-Info-App/; in dev at /
-const base = import.meta.env.PROD ? '/Student-Info-App/' : '/'
+// Hash mode works on GitHub Pages without server config; no base path issues
 const router = createRouter({
-  history: createWebHistory(base),
+  history: createWebHashHistory(),
   routes
 })
 
